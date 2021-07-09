@@ -10,23 +10,23 @@ selector {
 } */
 
 /* SELECTOR TAG NAME  (NOMBRE DE LA ETIQUETA H1, H2) */
-H1, H2 {
+/* H1, H2 {
     display: inline;
 }
 h4 {
     font-weight: lighter;
-}
+} */
 
 /* Selector id  */
-#parrafo {
+/* #parrafo {
     background-color: green;
 }
 div {
     background-color: red;
-}
+} */
 /* Selector de clase  */
 
-.container {
+/* .container {
     background-color: blueviolet;
 
 }
@@ -37,12 +37,12 @@ ul * {
 li > ul > * {
     font-size: 20px;
 }
-
+ */
 
 /* Selector universal */
-*{
+/* *{
     font-size: 70px;
 }
 html{
     font-size: 50px;
-}
+} */
