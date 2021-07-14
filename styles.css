@@ -46,6 +46,14 @@ li > ul > * {
 html{
     font-size: 50px;
 } */
+/* Para generar variables 
+:root {
+    --width: 20px;
+
+    Para llamarla 
+    var(--width: 20px)
+}
+*/
 
 *{
     list-style-type: none;
@@ -69,11 +77,16 @@ html{
 } 
 
 ul > li {
-    display: inline-block;
+   
     padding: 50px;
     font-size: 30px;
+    border: 1px solid white;  
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     
-
 }
 h1 {
     font-size: 40px;
@@ -116,3 +129,6 @@ p {
     background-color: rgb(60, 61, 56);
 }
 
+main > section {
+    margin: 20px 0;
+}
