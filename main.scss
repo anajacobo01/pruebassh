@@ -1,7 +1,118 @@
 @import 'variables';
 @import 'clases';
-$size: 400px;
-#figura {
+
+#container {
     width: $size;
-    height: $size;
+    height:$size;
+    display: grid;
+   
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    grid-template-areas: 
+    'imagenuno . . . '
+    '. imagendos . imagentres'
+    ' .  . imagencuatro .';
+    background-color: black;
+    border: 2px solid black;
 }
+
+.size 
+{
+    width: 100%;
+    height: 100%;
+}
+.imagenuno{
+    grid-area: imagenuno;
+  
+}
+.imagendos{
+    grid-area: imagendos;
+  
+}
+.imagentres{
+    grid-area: imagentres;
+   
+}
+.imagencuatro{
+    grid-area: imagencuatro;
+   
+   
+}
+@media screen and  (max-width: 768px) {
+
+    #container {
+        width:200px;
+        height:200px;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33.3% 33.3% 33.3%;
+        grid-template-areas: 
+        'imagenuno .  '
+        '. imagendos '
+        ' imagentres imagencuatro '; 
+        border: 2px solid black;
+    }
+    
+    .size 
+    {
+    width: 100%;
+    height: 100%;
+    }
+    .imagenuno{
+    grid-area: imagenuno;
+    
+    }
+    .imagendos{
+    grid-area: imagendos;
+    
+    }
+    .imagentres{
+    grid-area: imagentres;
+    
+    }
+    .imagencuatro{
+    grid-area: imagencuatro;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+    #container {
+        width:400px;
+        height:400px;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 33.3% 33.3% 33.3%;
+        grid-template-areas: 
+        'imagenuno . . '
+        '. imagendos imagentres'
+        ' .  . imagencuatro '; 
+        border: 2px solid black;
+    }
+    
+    .size 
+    {
+    width: 100%;
+    height: 100%;
+    }
+    .imagenuno{
+    grid-area: imagenuno;
+    
+    }
+    .imagendos{
+    grid-area: imagendos;
+    
+    }
+    .imagentres{
+    grid-area: imagentres;
+    
+    }
+    .imagencuatro{
+    grid-area: imagencuatro;
+    }
+ }
+   
+    
